@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deriva Adrogué - Detalles</title>
+    <link rel="icon" href="./imagenes/logonegro.png" type="image/png">
+
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./imagenes/logoverde.png" alt="Logo de Deriva Adrogué" class="img-fluid"
+                    style="max-width: 150px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#info">¿Por qué Adrogué?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#hitos">Hitos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#deriva">¿Cómo es la deriva?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido de la Deriva -->
+    <div class="container mt-5 pt-5">
+        <h2 class="mb-4">La Deriva</h2>
+        <p class="mb-4">
+            Acá tenes las playlists para escuchar mientras haces la deriva
+        </p>
+
+        <!-- Más contenido relacionado con la deriva -->
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/4mogps86GXqRnQ6LjjcNkQ?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6 mb-4">
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/5egWfrzSR9jd6HYwdzjFdO?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección Diagrama de Flujo y Typeform -->
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center">Diagrama de Flujo y App</h2>
+        <p class="text-center mb-5">Aquí puedes ver el diagrama de flujo junto con la aplicación para interactuar.</p>
+
+        <div class="row justify-content-center">
+            <!-- Columna para el diagrama de flujo -->
+            <div class="col-12 mb-4">
+                <!-- Botón para abrir el modal -->
+                <button class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#flowChartModal">Ver
+                    Diagrama de Flujo</button>
+            </div>
+
+            <!-- Columna para el Typeform embebido, ocupando toda la fila -->
+            <div class="col-12">
+                <div data-tf-live="01JEQE8JPGT08SSENBW9BN1P81" style="height: 500px;"></div>
+                <script src="//embed.typeform.com/next/embed.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para el Diagrama de Flujo -->
+    <div class="modal fade modal-fullscreen" id="flowChartModal" tabindex="-1" aria-labelledby="flowChartModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="flowChartModalLabel">Diagrama de Flujo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <embed src="diagrama.pdf" width="100%" height="100%" type="application/pdf">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="experiencia-usuarios" class="info-section">
+        <div class="container">
+            <h2>Experiencia de Usuarios</h2>
+            <div class="row">
+                <div class="col-md-6 col-12 mb-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/NJ5e47uTi4I?si=B0iNxMthZ8dcmDBn" 
+                                title="Video 1" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-3">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/w8YC3lt4EA0?si=WNwpIpoRpo_nGEnF" 
+                                title="Video 2" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Botón para volver al inicio -->
+    <div class="text-center mt-4">
+        <a href="index.html" class="btn btn-primary btn-lg w-100">Volver al Inicio</a>
+    </div>
+    </div>
+
+    <section id="recomendaciones" class="info-section">
+        <div class="container">
+            <h2>Comparte tus recomendaciones</h2>
+            <p>Nos gustaría conocer tus recomendaciones y ver las fotos que hayas tomado durante la deriva. Comparte con
+                nosotros tus descubrimientos y contribuye a enriquecer la experiencia para otros.</p>
+            <form action="https://formspree.io/f/xbljekow" method="POST" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="recomendacion" class="form-label">Tu recomendación</label>
+                    <textarea id="recomendacion" name="recomendacion" class="form-control" rows="4"
+                        placeholder="Escribe tu recomendación aquí..." required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Sube una imagen</label>
+                    <input type="file" id="imagen" name="imagen" class="form-control" accept="image/*">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar recomendación</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="js.js"></script>
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
